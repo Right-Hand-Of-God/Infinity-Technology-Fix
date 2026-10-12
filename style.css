@@ -13,6 +13,7 @@
    ============================================================== */
 
 :root {
+  --page-gutter: clamp(12px, 4vw, 20px);
   --primary: #0B1220;
   --primary-light: #142035;
   --primary-border: #1E2D4A;
@@ -58,7 +59,7 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--page-gutter);
 }
 
 /* ---------------- Top Trust Bar ---------------- */
@@ -417,7 +418,7 @@ a {
 }
 
 .section-spacing {
-  padding: 60px 0;
+  padding: 60px var(--page-gutter);
 }
 
 .section-title {
@@ -1472,8 +1473,8 @@ a {
 
 @media (max-width: 600px) {
   .container {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
   }
 
   .top-bar-content {
@@ -1584,7 +1585,7 @@ a {
   }
 
   .section-spacing {
-    padding: 42px 0;
+    padding: 42px var(--page-gutter);
   }
 
   .section-title,
